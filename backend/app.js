@@ -2,6 +2,7 @@ import express from "express";
 import axios from "axios";
 import multer from "multer";
 import bodyParser from "body-parser";
+import FormData from "form-data";
 
 const app = express();
 const PORT = process.env.PORT || 5000;
