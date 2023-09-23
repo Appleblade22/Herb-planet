@@ -36,6 +36,10 @@ app.post("/upload", upload.single("file"), async (req, res) => {
     }
 });
 
+app.get("/", (req, res) => {
+    res.send("Hellooo Sempai");
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
