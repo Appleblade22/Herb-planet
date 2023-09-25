@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.cam-corners {
+  width: 100px;
+  height: 100px;
+
+  background: linear-gradient(to right, #989898 4px, transparent 4px) 0 0,
+    linear-gradient(to right, #989898 4px, transparent 4px) 0 100%,
+    linear-gradient(to left, #989898 4px, transparent 4px) 100% 0,
+    linear-gradient(to left, #989898 4px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, #989898 4px, transparent 4px) 0 0,
+    linear-gradient(to bottom, #989898 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, #989898 4px, transparent 4px) 0 100%,
+    linear-gradient(to top, #989898 4px, transparent 4px) 100% 100%;
+
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
